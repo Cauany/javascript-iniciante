@@ -1,0 +1,75 @@
+/* --- All Style --- */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+}
+
+body{
+    text-align: center;
+    background-color: rgba(0, 110, 255, 0.363);
+}
+
+header h1{
+    margin: 30px 40px;
+    color: white;
+}
+
+body section{
+    background-color: rgba(216, 208, 191, 0.719);
+    margin: 0px 300px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(29, 30, 32, 0.329);
+}
+
+body section div.content p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+body section div.content p input{
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgba(105, 107, 117, 0.705);
+}
+
+body section div.content button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: salmon;
+    box-shadow: 1px 2px 6px rgba(29, 30, 32, 0.5);
+}
+
+body section div.content button:hover{
+    transition: 500ms;
+    transform: scale(1.1);
+}
+
+select#tab{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.438);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#mostrar[value]{
+    
+    background-color: rgba(105, 107, 117, 0.705);
+    font-size: 16px;
+    font-weight: 600;
+}
