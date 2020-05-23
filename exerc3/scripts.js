@@ -48,26 +48,23 @@ const finalizar = buttonFin.addEventListener('click', () => {
     let soma = 0,
     quant = 0,
     media = 0,
-    maior = 0
+    maior = 0,
+    menor = numbers[0]
 
     if(numAdc == ''){
         alert(' Insira um número antes'
         )
     }else if(numAdc >=1 || numAdc <= 100){
-
-        for(let x = 0; x < numbers.length; x++){
-            
-            let menor = numbers[x]
-            soma += numbers[x]
+        
+        for(let pos in numbers){
+            soma += numbers[pos]
             quant = numbers.length
             media = soma/quant
 
-            if(numbers[x] < menor){
-                menor = numbers[x]
-                console.log(numbers[x])
-            }else if(numbers[x] > maior){
-                maior = numbers[x]
-                console.log(numbers[x])
+            if(numbers[pos] > maior){
+                maior = numbers[pos]
+            }else if(numbers[pos] < menor){
+                menor = numbers[pos]
             }
             show.innerHTML = `O total de números no array é ${quant},
                                 O maior número no array é ${maior},
